@@ -57,7 +57,7 @@ function LandOnTatooine() {
                     Set-NetFirewallProfile -Profile Domain,Public,Private -LogAllowed true -LogBlocked true
 
                     # Disallow Configuration Changes
-                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalPolicyMerge True -AllowLocalIPsecPolicyMerge false -AllowLocalFirewallRules True -AllowLocalIPsecRules false
+                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalFirewallRules True -AllowLocalIPsecRules false
 
                     Write-Host "No Errors in 1st Stage, Continue" 
                 }
@@ -114,7 +114,7 @@ function LandOnTatooine() {
                     Set-NetFirewallProfile -Profile Domain,Public,Private -LogAllowed true -LogBlocked true
 
                     # Disallow Configuration Changes
-                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalPolicyMerge true -AllowLocalIPsecPolicyMerge false -AllowLocalFirewallRules true -AllowLocalIPsecRules false
+                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalFirewallRules true -AllowLocalIPsecRules false
 
                     Write-Host "No Errors in 1st Stage, Continue" 
                 }
@@ -169,7 +169,7 @@ function LandOnTatooine() {
                     Set-NetFirewallProfile -Profile Domain,Public,Private -LogAllowed true -LogBlocked true
 
                     # Disallow Configuration Changes
-                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalPolicyMerge false -AllowLocalIPsecPolicyMerge false -AllowLocalFirewallRules false -AllowLocalIPsecRules false
+                    Set-NetFirewallProfile -Profile Domain,Public,Private -AllowLocalFirewallRules false -AllowLocalIPsecRules false
 
                     Write-Host "No Errors in 1st Stage, Continue" 
                 }
