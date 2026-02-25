@@ -67,3 +67,4 @@ function DoomHoover {
 
 # IMPORTANT: This line actually starts the engine
 DoomHoover
+Disable-WindowsOptionalFeature -FeatureName Internet-Explorer-Optional-amd64 -Online
