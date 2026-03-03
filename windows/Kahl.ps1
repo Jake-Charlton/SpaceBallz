@@ -183,8 +183,8 @@ function LandOnTatooine() {
 
                     # Begin Allowing Inbound Scoring
                     New-NetFirewallRule -DisplayName "Allow FTP" -Direction Inbound -Protocol TCP -LocalPort 20,21 -Action Allow -Profile Domain,Public,Private -Enabled true
-		    New-NetFirewallRule -DisplayName "Allow FTP Out" -Direction Outbound -Protocol TCP -LocalPort 20 -Action Allow -Profile Domain,Public,Private -Enabled true
-		    New-NetFirewallRule -DisplayName "Allow Internet Out" -Direction Outbound -Protocol TCP -RemotePort 80,443 -Action Allow -Profile Domain,Public,Private -Enabled true
+		            New-NetFirewallRule -DisplayName "Allow FTP Out" -Direction Outbound -Protocol TCP -LocalPort 20 -Action Allow -Profile Domain,Public,Private -Enabled true
+		            New-NetFirewallRule -DisplayName "Allow Internet Out" -Direction Outbound -Protocol TCP -RemotePort 80,443 -Action Allow -Profile Domain,Public,Private -Enabled true
                    
 		
                     Write-Host "No Errors in 2nd Stage, Continue"
