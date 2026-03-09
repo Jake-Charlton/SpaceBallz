@@ -247,7 +247,7 @@ function Suricata() {
     start-process 'C:\Program Files\Suricata\suricata.exe' -Wait -ArgumentList "-i $($(Get-NetIPAddress | Where-Object -Property ipaddress -match '172.*.*.*').ipaddress) --service-install"
 }
 Get-WindowsUpdate -AcceptAll -Install -Category 'Security Updates' -IgnoreReboot
-Suricata
 CargoShip
+Suricata
 deathStar
 LandOnTatooine
